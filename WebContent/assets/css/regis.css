@@ -1,0 +1,73 @@
+@CHARSET "UTF-8";
+
+#box .container form dl dd ul.re_ul {
+	margin: 0px 0px 15px -41px;
+	font-family: "Microsoft Yahei";
+}
+form dl dd ul.re_ul li{
+	float: left;
+	width: 125px;
+	height: 30px;
+	display: block;
+	cursor: pointer;
+	list-style: none;
+	line-height: 30px;
+	padding-left: 30px;
+}
+#box .container form dl dd ul.re_ul li.re_phone{
+	border: 1px solid #008ed2;
+	color: #008ed2;
+	background: url(../img/phone.png) no-repeat 10px;
+}
+form dl dd ul.re_ul li.re_email{
+	background: url(../img/email.png) no-repeat 5px;
+	border-top: 1px solid #eeecec;	
+	border-right: 1px solid #eeecec;
+	border-bottom: 1px solid #eeecec;
+}
+
+#box .container form dl dd span.span{
+			width: 310px;
+			float: left;
+			margin-bottom: 6px;
+			color: #999999;
+		}
+		#box .container form dl dd.d2 {
+			clear: left;
+		}
+		#box .container form dl dd.d2 span{
+			display: block;
+			height: 50px;
+			margin-left: 30px;		
+			line-height: 50px;	
+			color: #4b4b4b;
+		}
+		#box .container form dl dd span.span_p em{
+			display: block;
+			width: 60px;
+			height: 6px;
+			background: #ccc;
+			float: left;
+			margin-right: 2px;
+		}
+		.phoneNum{
+			 margin: 25px 0px 15px 0px;
+		}
+		.span_img{
+			display: block; 
+			float:left; 
+			background: #ccc; 
+			width: 100px; 
+			height: 36px;
+		}
+		button.getcheck{
+			display: block; 
+			float:left; 
+			background: #fafafa; 
+			border: 1px solid #eeecec; 
+			width: 100px; 
+			height: 33px; 
+			color: #dcdcdc;
+		}
+
+

@@ -1,0 +1,114 @@
+body{
+			margin: 0px;
+			padding: 0px;
+			background: #f3f3f3;
+			font: 12px/1.5 "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Hiragino Sans GB","Microsoft Yahei","sans-serif";
+			color: #000;
+		}
+		#box{
+			width: 400px;
+			height: auto;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		#box h1.h1{
+			width: 400px;
+			height: 60px;
+			text-align: center;
+			line-height: 100px;
+		}
+		#box .h1 img.img1{
+			width: 130px;
+			height: 40px;
+			margin-top: 20px;
+		}
+		#box div.container, #box div.box2{
+			width: 400px;
+			height: 400px;
+			background: #fff;
+		}
+		#box div.container{
+			box-shadow: 0 0 6px rgba(0,0,0,.1);
+		}
+		#box div.container hr.hr1{
+			left: 40px;
+		}
+		#box div.container hr.hr1,#box div.container hr.hr2{
+			width: 30%;
+			border-bottom: 1px solid #fff;
+			position: absolute;
+			top: 140px;
+			opacity: 0.3;
+		}
+		#box div.container hr.hr2{
+			right: 40px;
+		}
+		#box div.container h4{
+			text-align: center;
+			padding-top: 40px;
+			font-size: 14px;
+			font-weight: 300;
+		}
+		#box div.container input.input1,#box div.container input.input2{
+			width: 305px;
+			height: 30px;
+			padding-left: 5px;
+			color: #ccc;
+			font-family: "microsoft yahei";
+			border: 1px solid #ccc;
+			box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+		}
+		.input2{
+			margin-top: 15px;
+		}
+		dl dd a{
+			display: inline;
+			margin-left: 145px;
+			text-decoration: none;
+			color: #3b65a7;
+		}
+		input.login{
+			border: 0px;
+			background: #0082d2;
+			color: #fff;
+			font-family: "microsoft yahei";
+			margin-top: 25px;
+			border-radius: 2px;
+			font-weight: 600;
+			font-size: 14px;
+		}
+		input.login,input.login2{
+			width: 310px;
+			height: 35px;
+		}
+		input.login2{
+			margin-top: 25px;
+			background: #fff;
+			color: #4b4b4b;
+			font-family: "microsoft yahei";
+			font-weight: 600;
+			font-size: 12px;
+			background: url(../img/wechat.png) no-repeat 110px;
+			border-radius: 2px;
+			border: 1px solid #eeecec;
+		}
+		.d1{
+			margin-top: 10px;
+		}
+		span.span1{
+			width: 100%;
+			height: 30px;
+			display: block;
+			margin-left: 120px;
+			padding-top: 15px; 
+			color: #3b4b4b;
+		}
+		span.span{
+			color: #4b4b4b;
+		}
+		a.a2{
+			color: #3b65a7;
+			text-decoration: none;
+		}

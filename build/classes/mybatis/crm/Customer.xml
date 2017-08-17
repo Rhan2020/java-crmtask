@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Customer">
+	<insert id="insert" parameterType="hashmap" keyProperty="string">
+		insert
+		into customer
+		(
+			id
+			,name
+			,source
+			,status
+			,straffName
+			,contactTime
+			,signTime
+			,money
+			,address
+			,phone
+		)
+		values
+		(
+			#{id}
+			,#{name}
+			,#{source}
+			,#{status}
+			,#{straffName}
+			,#{contactTime}
+			,#{signTime}
+			,#{money}
+			,#{address}
+			,#{phone}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="hashmap">
+		delete from customer
+		where
+		id = #{id}
+	</delete>
+
+	<update id="update" parameterType="hashmap">
+		update dic_edu
+		<set>
+				<if test=" id != null ">
+					id = #{id},
+				</if>
+				<if test=" name != null ">
+					name = #{name},
+				</if>
+				<if test=" sort != null ">
+					sort = #{sort},
+				</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<select id="select_all" resultType="hashmap">
+		select 
+				*
+		from customer 
+	</select>
+
+	<select id="select_count" parameterType="hashmap" resultType="int">
+		select count(id) as c from dic_edu
+		<where>
+				<if test=" id != null and id !='' ">
+					and id = #{id}
+				</if>
+				<if test=" name != null and name !='' ">
+					and name = #{name}
+				</if>
+				<if test=" sort != null and sort !='' ">
+					and sort = #{sort}
+				</if>
+		</where>
+	</select>
+	
+	<select id="select_name" parameterType="hashmap" resultType="hashmap">
+		select * from customer
+		<where>
+				<if test=" name != null and name !='' ">
+					and name like concat('%',#{name},'%')
+				</if>
+		</where>
+	</select>
+	
+	<select id="select_status" parameterType="hashmap" resultType="hashmap">
+		select * from customer
+		<where>
+				<if test=" status != null and status !='' ">
+					and status = #{status}
+				</if>
+		</where>
+	</select>
+	
+	<select id="select_one" parameterType="String" resultType="pd">
+		 select * from customer
+		 <where>
+		 		<if test=" _parameter != null and _parameter != '' ">
+					  and id = #{_parameter}
+				</if>				
+		 </where>	
+	</select>
+	
+	
+	<select id="select_id" parameterType="hashmap" resultType="hashmap">
+		select * from customer
+		<where>
+				<if test=" id != null and id !='' ">
+					and id = #{id}
+				</if>
+		</where>
+	</select>
+</mapper>
